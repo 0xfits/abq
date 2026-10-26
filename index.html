@@ -3,151 +3,89 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>abq — managed addresses</title>
-<style>
-  :root {
-    --bg: #17140f;
-    --surface: #1f1b15;
-    --line: #342d22;
-    --text: #e9e3d7;
-    --muted: #9d9483;
-    --accent: #c9a86a;
-  }
-
-  * {
-    box-sizing: border-box;
-  }
-
-  body {
-    margin: 0;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    background: var(--bg);
-    color: var(--text);
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    line-height: 1.6;
-    -webkit-font-smoothing: antialiased;
-  }
-
-  .wrap {
-    width: 100%;
-    max-width: 44rem;
-    margin: 0 auto;
-    padding: 0 1.5rem;
-  }
-
-  header {
-    border-bottom: 1px solid var(--line);
-  }
-
-  .wrap-header {
-    display: flex;
-    align-items: center;
-    padding: 1.25rem 1.5rem;
-  }
-
-  .wordmark {
-    margin: 0;
-    font-size: 1.125rem;
-    font-weight: 600;
-    letter-spacing: 0.08em;
-    color: var(--accent);
-  }
-
-  main {
-    flex: 1;
-    padding: 3rem 0;
-  }
-
-  h1 {
-    margin: 0 0 2rem;
-    font-size: 2rem;
-    font-weight: 600;
-    letter-spacing: -0.01em;
-  }
-
-  .card {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: baseline;
-    gap: 0.5rem 1.5rem;
-    padding: 1.5rem;
-    background: var(--surface);
-    border: 1px solid var(--line);
-    border-radius: 10px;
-  }
-
-  .card-body {
-    flex: 1 1 16rem;
-  }
-
-  .card h2 {
-    margin: 0 0 0.25rem;
-    font-size: 1.25rem;
-    font-weight: 600;
-  }
-
-  .card p {
-    margin: 0;
-    color: var(--muted);
-  }
-
-  .enter {
-    color: var(--accent);
-    text-decoration: none;
-    border: 1px solid var(--line);
-    border-radius: 6px;
-    padding: 0.4rem 1rem;
-    white-space: nowrap;
-  }
-
-  .enter:hover,
-  .enter:focus {
-    border-color: var(--accent);
-    outline: none;
-  }
-
-  footer {
-    border-top: 1px solid var(--line);
-    padding: 1.5rem 0 2.5rem;
-    color: var(--muted);
-    font-size: 0.875rem;
-  }
-
-  footer p {
-    margin: 0.25rem 0;
-  }
-
-  footer a {
-    color: inherit;
-  }
-</style>
+<title>Abbey Quant — Quantitative market-making for digital asset markets</title>
+<meta name="description" content="Abbey Quant is a quantitative market-making firm providing liquidity in digital asset markets.">
+<link rel="icon" type="image/png" href="/assets/abbey-quant-logo.png">
+<link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-  <header>
-    <div class="wrap wrap-header">
-      <p class="wordmark">abq</p>
+<header class="site-header">
+  <div class="shell header-inner">
+    <a class="brand" href="/">
+      <img class="brand-mark" src="/assets/abbey-quant-logo.png" alt="Abbey Quant emblem" width="1001" height="1000">
+      <span class="wordmark">Abbey Quant</span>
+    </a>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="/about/">About</a>
+      <a href="/approach/">Approach</a>
+      <a href="/technology/">Technology</a>
+      <a href="/contact/">Contact</a>
+      <a class="nav-console" href="/abbey/">Console</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero shell">
+    <span class="badge-plate">
+      <img src="/assets/abbey-quant-logo.png" alt="Abbey Quant emblem" width="1001" height="1000">
+    </span>
+    <h1 class="hero-title">Abbey Quant</h1>
+    <p class="hero-tagline">Quantitative market-making for digital asset markets.</p>
+    <div class="cta-row">
+      <span class="cta-cluster">
+        <a class="btn" href="/about/">About</a>
+        <a class="btn" href="/contact/">Contact</a>
+      </span>
+      <a class="btn btn-primary" href="/abbey/">Console &rarr;</a>
     </div>
-  </header>
+  </section>
 
-  <main class="wrap">
-    <h1>Managed addresses</h1>
-
-    <article class="card">
-      <div class="card-body">
-        <h2>Abbey Quant</h2>
-        <p>Quantitative market-making.</p>
+  <section class="section shell" aria-labelledby="facts">
+    <p class="eyebrow" id="facts">At a glance</p>
+    <div class="fact-grid">
+      <div class="fact">
+        <p class="eyebrow">Focus</p>
+        <p class="fact-value">Market-making &amp; liquidity provision</p>
       </div>
-      <a class="enter" href="/abbey/">Enter</a>
-    </article>
-  </main>
-
-  <footer>
-    <div class="wrap">
-      <p>More projects will be listed here.</p>
-      <p>abq · static shell · github.com/0xfits/abq</p>
+      <div class="fact">
+        <p class="eyebrow">First engine</p>
+        <p class="fact-value">StBernard</p>
+      </div>
+      <div class="fact">
+        <p class="eyebrow">Ecosystem</p>
+        <p class="fact-value">seafood (<a href="https://0xseafood.com">0xseafood.com</a>)</p>
+      </div>
     </div>
-  </footer>
+  </section>
+
+  <section class="section shell" aria-labelledby="approach-summary">
+    <div class="summary-grid">
+      <div class="summary">
+        <p class="eyebrow" id="approach-summary">Approach</p>
+        <p>Abbey Quant treats market-making as an operational discipline rather than a series of bets. Quoting, inventory and execution are managed as one continuous process, with risk governing every decision that follows. The aim is steady, dependable liquidity that counterparties can rely on over time.</p>
+        <a class="more" href="/approach/">Read the approach</a>
+      </div>
+      <div class="summary">
+        <p class="eyebrow">Technology</p>
+        <p>StBernard is our first programmatic market-making engine, operating within the seafood ecosystem (0xseafood.com). Monitoring, risk controls and automation surround it so that activity stays observable, bounded and repeatable. We describe capability here, not implementation.</p>
+        <a class="more" href="/technology/">Read the technology</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="shell footer-inner">
+    <p class="footer-note">&copy; 2026 Abbey Quant &middot; For informational purposes only; not an offer or solicitation, and not investment advice.</p>
+    <nav class="footer-nav" aria-label="Footer">
+      <a href="/about/">About</a>
+      <a href="/approach/">Approach</a>
+      <a href="/technology/">Technology</a>
+      <a href="/contact/">Contact</a>
+      <a href="/abbey/">Console</a>
+    </nav>
+  </div>
+</footer>
 </body>
 </html>
