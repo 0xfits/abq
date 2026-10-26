@@ -1,1 +1,1 @@
-{"rewrites":[{"source":"/abbey/:path*","destination":"https://abbey2026.vercel.app/abbey/:path*"}]}
+{"routes":[{"handle":"filesystem"},{"src":"^/abbey(?:/(.*))?$","dest":"https://abbey2026.vercel.app/abbey/$1"}]}
