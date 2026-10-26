@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>abq — managed addresses</title>
+<style>
+  :root {
+    --bg: #17140f;
+    --surface: #1f1b15;
+    --line: #342d22;
+    --text: #e9e3d7;
+    --muted: #9d9483;
+    --accent: #c9a86a;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap {
+    width: 100%;
+    max-width: 44rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+
+  header {
+    border-bottom: 1px solid var(--line);
+  }
+
+  .wrap-header {
+    display: flex;
+    align-items: center;
+    padding: 1.25rem 1.5rem;
+  }
+
+  .wordmark {
+    margin: 0;
+    font-size: 1.125rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    color: var(--accent);
+  }
+
+  main {
+    flex: 1;
+    padding: 3rem 0;
+  }
+
+  h1 {
+    margin: 0 0 2rem;
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+  }
+
+  .card {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.5rem 1.5rem;
+    padding: 1.5rem;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+  }
+
+  .card-body {
+    flex: 1 1 16rem;
+  }
+
+  .card h2 {
+    margin: 0 0 0.25rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+
+  .card p {
+    margin: 0;
+    color: var(--muted);
+  }
+
+  .enter {
+    color: var(--accent);
+    text-decoration: none;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: 0.4rem 1rem;
+    white-space: nowrap;
+  }
+
+  .enter:hover,
+  .enter:focus {
+    border-color: var(--accent);
+    outline: none;
+  }
+
+  footer {
+    border-top: 1px solid var(--line);
+    padding: 1.5rem 0 2.5rem;
+    color: var(--muted);
+    font-size: 0.875rem;
+  }
+
+  footer p {
+    margin: 0.25rem 0;
+  }
+
+  footer a {
+    color: inherit;
+  }
+</style>
+</head>
+<body>
+  <header>
+    <div class="wrap wrap-header">
+      <p class="wordmark">abq</p>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <h1>Managed addresses</h1>
+
+    <article class="card">
+      <div class="card-body">
+        <h2>Abbey Quant</h2>
+        <p>Quantitative market-making.</p>
+      </div>
+      <a class="enter" href="/abbey/">Enter</a>
+    </article>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p>More projects will be listed here.</p>
+      <p>abq · static shell · github.com/0xfits/abq</p>
+    </div>
+  </footer>
+</body>
+</html>
