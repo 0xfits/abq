@@ -135,18 +135,6 @@ img {
   border-bottom-color: var(--accent-dim);
 }
 
-.site-nav .nav-console {
-  color: var(--accent);
-  border: 1px solid var(--line-strong);
-  border-bottom-width: 1px;
-  padding: 0.4rem 0.9rem 0.4rem;
-}
-
-.site-nav .nav-console:hover,
-.site-nav .nav-console:focus-visible {
-  border-color: var(--accent);
-}
-
 /* ---------- main ---------- */
 
 main {
@@ -503,6 +491,21 @@ main {
 .footer-nav a:hover,
 .footer-nav a:focus-visible {
   color: var(--accent);
+}
+
+.footer-admin {
+  margin: 0.6rem 0 0;
+  font-size: 0.8rem;
+}
+
+.footer-admin a {
+  color: var(--muted);
+}
+
+.footer-admin a:hover,
+.footer-admin a:focus-visible {
+  color: var(--text-soft);
+  text-decoration: none;
 }
 
 @media (max-width: 40rem) {
